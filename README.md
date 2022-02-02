@@ -17,9 +17,22 @@ For customers, “paying for what you use” is a value proposition in itself.  
 
 
 ## What is Serverless SaaS?
-As you guest it, Serverless SaaS is using AWS Serverless Services and applying it to SaaS.  Why does SaaS and Serverless fit well togehter?  You want to ensure revenue of the tenant is greatern than the cost of tenant...
-Agility is key to SaaS and Serverless provides this bc ... no need to foucs on scaling polices, availability, much of that is handled, so you spend more time writing code that matters to your business and differenates you rather than infrastructure.
-...
+As you guest it, Serverless SaaS is using AWS Serverless Services and applying it to SaaS.  Why does SaaS and Serverless fit well togehter?  
+
+**Paying for what you use pricing is natural in serverless**
+
+In Serverless, paying for only what you use is the pricing model.  E.g. When you execute a Lambda function you are only paying for the duration that function is running. This aligns with SaaS model as you can charge your customer for value they consume and nothing more.  In traditional archecture, i.e. Ec2 instances, you do not have this luxary.  
+
+
+**Agility is built into serverless**
+
+In serverless, no need to focus on scaling polices, availability, much of that is handled for you. So you spend more time writing code that matters to your business and differentiate you rather than infrastructure.  This makes you more agile enabling you to react to market needs quicker.
+
+**Tiering basics built in**
+
+Features in serverless not originally built for tiering, but lends itself nicely for this use case:
+1.	API gateway – You have concept of a usage plan.  This usage plan can throttle users if they send in too many requests (e.g. Basic tiers would def want to do this).  Furthermore, usage plan also has concept of quotas, which can be used to prevent lower tiers from taking up more resources than desired from the upper tiers.
+2.	Lambda – Lambda has a concept called reserve concurrency and it can be used to limit the consumption of a given tenant tier.  On the opposite side of this spectrum, Lambda has a concept called Provisioned concurrency, which can be used for Premium tiers to ensure that the Lambda is “warm” and can respond to requests with lower latency
 
 ## Basic Vocabulary of SaaS
 
