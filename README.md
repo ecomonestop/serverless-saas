@@ -1,9 +1,19 @@
 # serverless-saas
 
 ## What is SaaS?
-SaaS is a business model not a technical architecture.  Its the creation of a service experience for customers that focuses on zero downtime, regular updates, and closer connection with customers. Its a system where all tenants are managed and operated through a single, unified experience. This means that every tenant is running the same version of the software, they all get deployments at the same time, they are all onboarded through the same process, and they are all managed through a single operational experience, which applies to all tenants. This how SaaS providers stay agile enblinng taking features to market faster as they are not maintaing seperate versions of the product, reinventing the wheel on non differeationg activties ,b ut instead focusing on your business domain and instally taking theis vaule to all customers in a single dpeloyment
-tiers
-meetering / pay as you go pricing monetization
+SaaS is a business model not a technical architecture.  Its the creation of a service experience for customers that focuses on zero downtime, regular updates, and closer connection with customers.
+
+**Staying agile and getting features to customers faster**
+
+Its a system where all tenants are managed and operated through a single, unified experience. This means that every tenant is running the same version of the software, they all get deployments at the same time, they are all onboarded through the same process, and they are all managed through a single operational experience, which applies to all tenants. This how SaaS providers stay agile taking features to market faster as they are not maintaining separate versions of the product, reinventing the wheel on non-differentiating activities, but instead focusing on your business domain and instantly taking this value to all customers in a single deployment.
+
+**Targeting Customer Segments via tiers**
+
+Tiers in SaaS business model is common.  E.g. Basic vs. Standard vs. Premium packages.  Your tiering strategy will align with the different market segments you are targeting.  Each Tier has its own value proposition.  
+
+**Metering / pay for what you use pricing monetization**
+
+For customers, “paying for what you use” is a value proposition in itself.  SaaS has a concept of a “tenant”, which enables this business model.   In a SaaS system, you are expected to perform “tenant aware” operations such as publishing billable events with tenant information attached.  Furthermore, consumption of a tenant is also captured. This allows customers to have a pricing model that is more tightly coupled to the value and load they are placing on a SaaS system.
 
 
 ## What is Serverless SaaS?
