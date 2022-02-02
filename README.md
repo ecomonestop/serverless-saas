@@ -1,7 +1,10 @@
 # serverless-saas
 
 ## What is SaaS?
-SaaS is a business model not a technical architecture....
+SaaS is a business model not a technical architecture.  Its the creation of a service experience for customers that focuses on zero downtime, regular updates, and closer connection with customers. Its a system where all tenants are managed and operated through a single, unified experience. This means that every tenant is running the same version of the software, they all get deployments at the same time, they are all onboarded through the same process, and they are all managed through a single operational experience, which applies to all tenants. This how SaaS providers stay agile enblinng taking features to market faster as they are not maintaing seperate versions of the product, reinventing the wheel on non differeationg activties ,b ut instead focusing on your business domain and instally taking theis vaule to all customers in a single dpeloyment
+tiers
+meetering / pay as you go pricing monetization
+
 
 ## What is Serverless SaaS?
 As you guest it, Serverless SaaS is using AWS Serverless Services and applying it to SaaS.  Why does SaaS and Serverless fit well togehter?  You want to ensure revenue of the tenant is greatern than the cost of tenant...
