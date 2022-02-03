@@ -37,10 +37,13 @@ Features in serverless not originally built for tiering, but lends itself nicely
 ## Basic Vocabulary of SaaS
 
 ### What is a Tenant?
-Tenant is....
-Tenant isolation
-Noisy neighbor
-Tenant Tiers
+Customers who sign up for your SaaS product are represented as tenants in your system.  Upon signing up, the tenant typically is designated as the admin and can add other users, all of which would be operating under the same tenant. 
+
+A few other tenant related topics:
+   
+   - Tenant isolation ensures that each tenant is prevented from accessing another tenant’s resources.
+   - Noisy neighbor is where a tenant of your system places load on the system’s resources that have an adverse effect on other tenants of the system.  E.g. Basic tier user with poor throttling controls places signficant load on your system effecting a premium tier tenant.  
+   - Tenant Tiers - tiers give ability to target market segments, providing separate pricing and experiences to a spectrum of customer profiles
 
 ### Isolation strategies - Silo vs. Pooled
 Silo is...
